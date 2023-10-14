@@ -7,17 +7,6 @@ For inputArray = [1, 2, 1], elemToReplace = 1, and substitutionElem = 3, the out
 solution(inputArray, elemToReplace, substitutionElem) = [3, 2, 3].
  */
 
-
-// Copilot solution
-function solutionCopilot(inputArray, elemToReplace, substitutionElem) {
-  return inputArray.map((elem) => {
-    if (elem === elemToReplace) {
-      return substitutionElem
-    }
-    return elem
-  })
-}
-
 // My solution
 function solution(inputArray, elemToReplace, substitutionElem) {
   return inputArray.map(item => item === elemToReplace ? substitutionElem : item)
