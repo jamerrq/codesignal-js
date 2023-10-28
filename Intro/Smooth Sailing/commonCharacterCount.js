@@ -17,9 +17,9 @@ function solution(s1, s2) {
   s2.split('').forEach(item => {
     counts2[item] = (counts2[item] ?? 0) + 1
   })
-  // console.log(counts1, counts2)
+
   const uniqueLetters = Array.from(new Set(s1.split('')))
-  // console.log(uniqueLetters)
+
   return uniqueLetters.reduce((acc, val) => {
     return acc + Math.min(counts1[val] ?? 0, counts2[val] ?? 0)
   }, 0)

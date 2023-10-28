@@ -29,7 +29,7 @@ function solution(sequence) {
     if (sequence[i] <= prev) {
       const sublist = sequence.slice(0, i).concat(sequence.slice(i + 1))
       const sublist2 = sequence.slice(0, i - 1).concat(sequence.slice(i))
-      console.log(i, sublist, sublist2)
+
       return isIncreasing(sublist) || isIncreasing(sublist2)
     }
     prev = sequence[i]

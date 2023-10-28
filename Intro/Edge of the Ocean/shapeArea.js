@@ -16,10 +16,10 @@ solution(n) = 13.
 function solution(n) {
   let totalArea = 0
   for (let i = 0; i < n - 1; ++i) {
-    // console.log(i)
+
     totalArea += 2 * (2 * i + 1)
   }
-  // console.log(totalArea)
+
   totalArea += (n - 1) * 2 + 1
   return totalArea
 }

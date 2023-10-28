@@ -27,7 +27,7 @@ function solution(min1, min2_10, min11, s) {
   }
   if (min2_10 <= s) {
     let maxMins = Math.min(9, Math.floor(s / min2_10))
-    console.log(maxMins)
+
     if (maxMins) {
       ans += maxMins
       s -= min2_10 * maxMins
@@ -35,7 +35,7 @@ function solution(min1, min2_10, min11, s) {
   }
   if (min11 <= s && ans >= 10) {
     let maxMins = Math.floor(s / min11)
-    console.log(maxMins)
+
     ans += maxMins
   }
   return ans

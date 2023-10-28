@@ -21,7 +21,7 @@ function solution(inputString) {
       odds--
     }
   })
-  console.log('freqs', freqs, odds)
+
   if (n % 2) {
     return odds === 1
   } else {

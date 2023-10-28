@@ -43,10 +43,10 @@ function solution(a, b) {
   for (let i = 0; i < a.length; i++) {
     if (a[i] !== b[i]) {
       let candidates = a.slice(i + 1).map((num, index) => num === b[i] ? index + i + 1 : - 1).filter(i => i !== -1)
-      // console.log(candidates)
+
       for (let j of candidates) {
         let optionJ = swap(a, i, j)
-        // console.log(j, optionJ)
+
         if (areEqual(b, optionJ)) return true
       }
       return false

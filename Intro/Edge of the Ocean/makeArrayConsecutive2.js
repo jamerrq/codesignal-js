@@ -12,7 +12,7 @@ Ratiorg needs statues of sizes 4, 5 and 7.
 function solution(statues) {
   statues.sort((a, b) => a - b)
   let reamining = 0
-  // console.log(statues)
+
   for (let i = 1; i < statues.length; ++i) {
     reamining += statues[i] - statues[i - 1] - 1
   }

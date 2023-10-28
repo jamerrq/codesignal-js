@@ -17,7 +17,7 @@ solution(cell) = 6.
  */
 
 function solution(cell) {
-  let abc = 'abcdefgh';
+  let abc = 'abcdefgh'
   let dpPath = [
     [2, 1],
     [2, -1],
@@ -27,18 +27,18 @@ function solution(cell) {
     [-1, -2],
     [-2, 1],
     [-2, -1],
-  ];
-  let [col, row] = cell.split('');
-  let ans = 0;
+  ]
+  let [col, row] = cell.split('')
+  let ans = 0
   for (let path of dpPath) {
     let [i, j] = path
     let newCol =
-      abc[abc.indexOf(col) + i];
-      let newRow = parseInt(row) + j;
-      if (newRow > 0 && newCol && newRow < 9) {
-        console.log(newRow, newCol);
-        ans++;
-      }
+      abc[abc.indexOf(col) + i]
+    let newRow = parseInt(row) + j
+    if (newRow > 0 && newCol && newRow < 9) {
+
+      ans++
+    }
   }
-  return ans;
+  return ans
 }

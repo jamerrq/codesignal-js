@@ -33,7 +33,7 @@ function solution(inputString) {
   })
   const uniques = Array.from(new Set(inputString)).sort()
   for (let i = 0; i < uniques.length; ++i) {
-    console.log(uniques[i], prev(uniques[i]))
+
     if (uniques[i] === 'a') continue
     if (freqs[uniques[i]] > (freqs[prev(uniques[i])] ?? 0)) return false
   }
